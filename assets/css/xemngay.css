@@ -1,0 +1,265 @@
+.xemngay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.main_xemngay{
+    
+    
+    background: #ffff;
+    position: fixed;
+    margin-top: 150px;
+    margin-left: 30%;
+    display: flex;
+    border-radius: 10px;
+    z-index: 999;
+    transform: translateX(200%);
+}
+.check-xemngay:checked ~ .xemngay{
+    display: block;
+}
+.check-xemngay:checked ~ .main_xemngay{
+    transform: translateX(0);
+}
+.imgxemngay{
+    height: 350px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    border: solid 1px #ebebeb;
+    border-radius: 10px;
+}
+.imgxemngay img{
+    height: 100%;  
+}
+
+.main_xemngay2{
+    width: 100%;
+    margin: 10px 0 10px 10px;
+    border: solid 1px #ebebeb;
+    padding-left: 10px;
+    background:rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+
+.main_xemngay2 p span{
+    font-size: 13px;
+    padding-left: 20px;
+    text-transform:lowercase;
+}
+.giamuangay{
+    color: red;
+    font-weight: 700;
+}
+.giamuangay span{
+    color: #191919;
+	padding-left: 16px;
+	font-size: 12px;
+	text-decoration: line-through;
+    font-weight: 200 ;
+}
+.luachon_xemngay input{
+    margin-left: 16px;
+    margin-top: 16px;
+    
+}
+
+.search_modal-icon-btn{
+    float: right;
+}
+.muangay_soluong{
+    display: flex;
+}
+
+.cart_spgiohang-sl{
+    display: inline-flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+
+
+} 
+
+.cart_spgiohang-sl_stt{
+    padding:0.5px 10px;
+}
+.cart_spgiohang-sl p{
+    width: 25px;
+    background:#f3f4f4 ;
+    border-radius: 0;
+    float: left;
+    -webkit-appearance: none;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 4px;
+    text-align: center;
+}
+.cart_spgiohang-sl p:hover{
+    font-weight: 900;
+}
+a.muangay_themvaogio {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    background: black;
+    padding: 9px;
+    border-radius: 5px;
+    margin: 29%
+}
+#searchResults {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.product-itemss {
+    box-sizing: border-box;
+    flex-basis: calc(100% );
+    text-align: left;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    min-width: 300px;
+    border: none;
+}
+
+.product-itemss img {
+    max-width: 60px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.product-detailss {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: calc(100% - 60px); /* Sửa giá trị width để bảo đảm phần thông tin chiếm đúng phần còn lại của sản phẩm */
+}
+
+.product-name {
+    font-size: 12px; /* Tùy chỉnh kiểu chữ cho tên sản phẩm */
+}
+
+.product-prices {
+    margin-top: 5px; /* Tùy chỉnh khoảng cách giữa tên và giá sản phẩm */
+    font-size: 14px; 
+    font-size: 12px;
+    text-align: right;
+    /* Tùy chỉnh kiểu chữ cho tên sản phẩm */
+    /* Tùy chỉnh kích thước chữ cho giá sản phẩm */
+}
+.product-link {
+    text-decoration: none; /* Để loại bỏ đường gạch chân mặc định của thẻ a */
+    color: inherit; /* Để sử dụng màu sắc của cha đối với thẻ a */
+    /* Thêm bất kỳ tùy chỉnh CSS nào bạn muốn cho thẻ a */
+}
+.search_modal_btns{
+    border: none;
+    font-size: 14px;
+    background: white;
+}
+span.pro-price-del {
+    position: sticky;
+}
+
+span.original-price {
+    color: #939393;
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+span.original-price:after {
+    background-color: initial;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 60px 40px;
+    content: "";
+    display: block;
+    height: 36px;
+    right: 0;
+    z-index: 99;
+    position: absolute;
+    top: -5px;
+    width: 58px; /* Kích thước sửa lại */
+}
+#discount-price {
+    display: inline-block;
+    padding: 0.8325em 0.9375em;
+    margin-right: 15px;
+    background: #000000;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.55em;
+    color: #fff;
+ 
+}
+.line {
+    padding: 24px 0 0;
+    border-top: 3px dashed #e0d9d6;
+}
+.wrapper-heading-home-instagram {
+    padding-bottom: 0px !important;
+    font-family: 'Oswald' !important;
+    width: 100%;
+    font-size: 5.85vw;
+    height: auto!important;
+    overflow: hidden;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: hsl(0deg 0% 100%);
+}
+.site-animation {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.wrapper-animation2 {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+    /* ... (rest of your CSS variables) ... */
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    padding: 60px;
+}
+
+.text-animation-2 h2 span {
+    animation-duration: var(--animate-duration);
+    animation-delay: var(--animate-delay);
+    animation-iteration-count: var(--animate-repeat);
+}
+.khuyenmais {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 7px 12px; /* Thay đổi giá trị để điều chỉnh kích thước hộp */
+  /* Thêm border-radius để bo tròn góc hộp */
+    margin-right: 7px; /* Thêm khoảng cách với các phần tử khác */
+    font-size: 0.65em;
+    
+    font-family: 'Oswald' !important;
+    font-weight: 600;
+}

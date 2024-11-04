@@ -1,0 +1,420 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.thongtin{
+    display:flex;
+    margin-top: 3%;
+}
+.infor-h3{
+    font-size: 15px ;
+}
+.infor-ul li>a{
+    text-decoration: none ;
+    color:#272727;
+    line-height: 2;
+    font-size:15px ;
+}
+.information-tong{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.infor-ul li {
+   list-style-type: circle ;
+}
+.infor-ul{
+    width: 178px;
+    height: 150px;
+}
+.information-left{
+    float: left;
+    display: block ;
+    width:100%;
+    padding-bottom: 1.5px;
+}
+.abc{
+    width: 95%;
+    background-color: gray; 
+    height: 0.5px; 
+}
+.adress{
+    display:block;
+    float: left;
+}
+/* Phần tử container của trang */
+.order-history {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Bảng đơn hàng */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Dòng header của bảng */
+.table th {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Dòng dữ liệu của bảng */
+.table td {
+    text-align: center;
+    padding: 15px;
+}
+
+/* Dòng lẻ của bảng */
+.table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Dòng chẵn của bảng */
+.table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Nút xem đơn hàng và đổi trả */
+.table td a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px ;
+    border-radius: 5px;
+}
+
+/* Màu nền nút "Chờ xác nhận" */
+.table td a.btn-waiting {
+    background-color: red;
+}
+
+/* Màu nền nút "Đơn hàng đang được giao" */
+.table td a.btn-shipping {
+    background-color: rgb(69, 51, 46);
+}
+
+/* Màu nền nút "Đã giao hàng" */
+.table td a.btn-delivered {
+    background-color: blue;
+}
+
+/* Nút "Đã nhận" */
+.table td a.btn-received {
+    background-color: green;
+}
+
+/* Nút "Xem đơn hàng" */
+.table td a.btn-view {
+    background-color: blue;
+}
+
+/* Nút "Đổi trả" */
+.table td a.btn-return {
+    background-color: orange;
+}
+
+/* Nút hover */
+.table td a:hover {
+    opacity: 0.8;
+}
+/* Nút "Đã nhận" */
+.btn-received {
+    background-color: green;
+    /* Thêm các thuộc tính CSS khác nếu cần */
+}
+
+/* Nút "Xem đơn hàng" */
+.btn-view {
+    background-color: blue;
+    /* Thêm các thuộc tính CSS khác nếu cần */
+}
+
+/* Nút "Đổi trả" */
+.btn-return {
+    background-color: orange;
+    /* Thêm các thuộc tính CSS khác nếu cần */
+}
+/* CSS cho các trang phân trang */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.page-link {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 16px;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.page-link.active,
+.page-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+.the_h {
+    margin-bottom: 20px;
+    color: #007bff;
+    font-family: 'Oswald' !important;
+    font-weight: 500;
+
+}
+
+.table {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+/* Reset các giá trị mặc định của trình duyệt */
+
+
+/* Các nút và liên kết */
+.category-button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-button[data-category="0"] {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.category-button[data-category="1"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.category-button[data-category="2"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.category-button[data-category="3"] {
+    background-color: #6c757d;
+    color: #fff;
+}
+.category-button[data-category="4"] {
+    background-color: rgb(249, 66, 66);
+    color: #fff;
+}
+.category-button.active,
+.category-button:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng các trang bảng */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: 'Oswald' !important;
+    font-weight: 400;
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Định dạng thanh điều hướng */
+.nav {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+/* Định dạng trạng thái đơn hàng */
+.status-label {
+    font-weight: bold;
+}
+
+.status-label[data-status="0"] {
+    color: #dc3545;
+}
+
+.status-label[data-status="1"] {
+    color: #28a745;
+}
+
+.status-label[data-status="2"] {
+    color: #007bff;
+}
+
+.status-label[data-status="3"] {
+    color: #6c757d;
+}
+
+.order-container {
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid #3e6667;
+    margin-bottom: 40px;
+    padding: 20px;
+    margin-top: 52px;
+    font-family: 'Oswald' !important;
+    font-weight: 400;
+}
+
+.order-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.order-number {
+    font-weight: bold;
+}
+
+.order-status .status-pending {
+    color: #ffc107;
+}
+
+.order-status .status-processing {
+    color: red;
+}
+
+.order-status .status-shipping {
+    color: #007bff;
+}
+
+.order-status .status-success {
+    color: rgb(14, 234, 205);
+}
+.order-status .status-successs {
+    color: rgb(234, 18, 14);
+}
+.order-item {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.product-image img {
+    max-width: 150px;
+    margin-right: 10px;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-price {
+    font-family: 'Oswald' !important;
+    font-weight: 500;
+    text-align: left; 
+    /* Đưa giá sản phẩm sang trái */
+}
+
+.total-price {
+    color: red;
+
+    font-family: 'Oswald' !important;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: right; /* Đưa giá thành tiền sang phải */
+}
+
+.order-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.action-button {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.receive-button {
+    order: 1; /* Đưa nút "Đã nhận hàng" sang trái */
+    margin-right: 10px; /* Khoảng cách giữa nút "Đã nhận hàng" và "Đổi trả" */
+}
+
+.return-button {
+    order: 2; /* Đưa nút "Đổi trả" sang phải */
+}
+
+/* Các thiết lập CSS khác cho các nút (màu sắc, padding, v.v.) */
+.receive-button, .return-button {
+    background-color: #28a745; /* Màu nền cho nút "Đã nhận hàng" */
+    color: #fff; /* Màu chữ cho nút "Đã nhận hàng" */
+    padding: 10px 20px; /* Kích thước padding cho nút "Đã nhận hàng" */
+    border: none; /* Loại bỏ viền của nút */
+    border-radius: 5px; /* Bo tròn góc cho nút */
+    text-decoration: none; /* Loại bỏ gạch chân khi hover */
+}
+.receive-buttonss {
+    background-color: rgb(65, 40, 167); /* Màu nền cho nút "Đã nhận hàng" */
+    color: #fff; /* Màu chữ cho nút "Đã nhận hàng" */
+    padding: 10px 20px; /* Kích thước padding cho nút "Đã nhận hàng" */
+    border: none; /* Loại bỏ viền của nút */
+    border-radius: 5px; /* Bo tròn góc cho nút */
+    text-decoration: none; 
+    margin-right: 30px;/* Loại bỏ gạch chân khi hover */
+}
+.return-button {
+    background-color: #007bff; /* Màu nền cho nút "Đổi trả" */
+    /* Các thiết lập CSS khác cho nút "Đổi trả" */
+}
+button.btn.btn-cancel {
+    background: red;
+    color: black;
+}
+button.btn.btn-cancell {
+    margin-left: 20px;
+    background: #e63b3b;
+    border: 1px solid;
+}

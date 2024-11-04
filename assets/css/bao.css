@@ -1,0 +1,44 @@
+.blog {
+    max-width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề của bài báo */
+.blog_main {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Hình ảnh bài báo */
+.img_center {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Thời gian và quay lại */
+.blog_header {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3498db;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog_header--icon {
+    margin-right: 5px;
+}
+
+/* Nội dung bài báo */
+
+
+/* Liên kết */
+
+

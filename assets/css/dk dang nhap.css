@@ -1,0 +1,128 @@
+.login-container {
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: #ffffff; 
+    font-family: 'Oswald' !important;
+    font-weight: 400;/* Màu nền phần đăng nhập */
+}
+
+.login-form {
+    width: 400px; /* Giảm chiều rộng của form */
+    background-color: #ffffff; /* Màu nền cho phần đăng nhập */
+    padding: 40px; /* Tăng khoảng cách giữa viền và nội dung trong form */
+    border-radius: 10px; /* Bo góc cho phần đăng nhập */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+    text-align: center;
+    margin: 0 auto; /* Căn giữa form trong .login-container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-wrapper {
+    margin-bottom: 20px; /* Khoảng cách giữa logo và các trường nhập liệu */
+}
+
+.logo-wrapper img {
+    width: 200px; /* Đặt kích thước cho logo */
+    height: auto; /* Để chiều cao tự động điều chỉnh dựa trên chiều rộng */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #333333; /* Màu chữ cho tiêu đề đăng nhập */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: -15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50; /* Màu nền cho nút đăng nhập */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.login-form button:hover {
+    background-color: #45a049; /* Màu nền khi di chuột vào nút đăng nhập */
+}
+
+.login-form .links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login-form .links a {
+    text-decoration: none;
+    color: #333333; /* Màu chữ cho liên kết */
+    margin-top: 20px;
+}
+
+
+
+
+.login-dkdn h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.login-dkdn input[type="text"],
+.login-dkdn input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-dkdn button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-dkdn button:hover {
+    background-color: #45a049;
+}
+
+.login-dkdn .links {
+    margin-top: 20px;
+}
+
+.login-dkdn .links a {
+    text-decoration: none;
+    color: #333333;
+}/* Thông báo "Giỏ hàng không có sản phẩm nào" */
+.cart_main--sp_ul--heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Thông báo "Giỏ hàng trống hoặc bạn chưa đăng nhập" */
+.cart_empty-message {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+

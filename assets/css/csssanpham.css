@@ -1,0 +1,234 @@
+.headline{
+	text-align: center;
+	/* margin: 40px 0px; */
+}
+h3{
+	font-size: 22px;
+	color: #000000;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #555;
+	font-family: 'Oswald' !important;
+    font-weight: 400;
+}
+/*Sắp xếp*/
+.home-sort{
+	display: flex;
+	align-items: center;
+	padding: 15px 20px;
+	border-radius: 3px;
+	background-color: #ffffff;
+	font-family: 'Oswald' !important;
+    font-weight: 400;
+}
+.filter-sort{
+	font-size: 18px;
+	color: #333;
+	margin-right: 16px;
+}
+.list-sort-by{
+	margin-top: 30px;
+	display: inline-block;
+    color: #333;
+    border: 1px solid black;
+	padding: 8px 10px;	
+	border: none;
+
+    /* padding-right: 40px; */
+    width: 150px;
+    height: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2em;
+    border-radius: 3px;
+	font-family: 'Oswald' !important;
+    font-weight: 400;
+	
+}
+button.muangay {
+    margin-left: 35%;
+}
+/*mục sản phẩm*/
+.maincontent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px;
+    justify-content: center;
+    margin-right: 40px;
+	
+}
+
+
+.maincontent-item {
+   
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%; 
+	
+}
+
+.maincontent-img img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .maincontent {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    }
+	/* .maincontent-item{
+		width: 50%;
+	} */
+}
+
+.maincontent ul{
+
+	margin-left: 20px;
+	
+	
+}
+.maincontent ul img{
+	width: 100%;
+	height: 400px;
+}
+.maincontent ul .maincontent-top{
+	position: relative;
+	overflow: hidden;
+}
+.maiconten-top1{
+	padding-top: 30px;
+}
+.maincontent ul .maincontent-top .maincontent-img{
+	
+	display: block;
+}
+.maincontent ul .maincontent-top .maincontent-img img{
+	display: block;
+	
+}
+.maincontent ul .maincontent-top:hover img{
+	opacity: 0.75;
+}
+/*mua ngay-thêm vào giỏ*/
+.maincontent ul .maincontent-top button {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    background: #191919;
+    color: #fff;
+    padding: 8px 0px;
+    text-align: center;
+    width: 100px; /* Điều chỉnh chiều rộng của nút theo ý muốn của bạn */
+    margin: 0 auto;
+    position: relative;
+    bottom: -35px;
+    transition: 0.5s ease-in-out;
+	
+}
+
+.maincontent ul .maincontent-top button.muangay a {
+    text-decoration: none;
+    color: white;
+}
+
+.maincontent ul .maincontent-top button.giohang{
+	position: absolute;
+	right: 1px;
+}
+.maincontent ul .maincontent-top button.giohang a{
+	text-decoration: none;
+	color: white;
+}
+.maincontent ul .maincontent-top:hover button{
+	bottom: 0px;
+}
+/*tên sp- giá*/
+.maincontent ul .maincontent-info{
+	padding: 10px 0px;
+	text-align: center;
+}
+.maincontent ul .maincontent-info a{
+	display: block;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+
+	font-size: 14px;
+	font-family: 'Oswald' !important;
+    font-weight: 400;
+}
+.maincontent ul .maincontent-info a.maincontent-name{
+	padding: 3px 0px;
+	text-transform: uppercase;
+	color: black;
+	font-size: 12px;
+	font-family: 'Oswald' !important;
+    font-weight: 600;
+	
+}
+.maincontent ul .maincontent-info a.maincontent-gia{
+	color: rgb(0, 0, 0);
+}
+
+/*chuyển trang*/
+.content-paging{
+	text-decoration: none;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 20px;
+}
+/* CSS cho các trang phân trang */
+.content-paging .filter-page a {
+    text-decoration: none;
+    border: 1px solid #CCC;
+    padding: 8px 12px; /* Tăng kích thước padding để tạo nút to hơn */
+    margin: 5px; /* Tạo khoảng cách giữa các nút */
+}
+
+.content-paging .filter-page a.filter-page-control {
+    background-color: #000000;
+    color: #fff;
+    font-size: 14px; /* Đặt kích thước chữ về 14px */
+    margin: 5px 10px; /* Điều chỉnh khoảng cách giữa các nút */
+    border-radius: 5px; /* Bo tròn các góc */
+    padding: 10px 20px; /* Tăng kích thước padding để nút to và dễ nhìn hơn */
+}
+
+.content-paging .filter-page a.filter-page-number {
+    margin: 5px;
+    border-radius: 5px;
+    padding: 8px 12px;
+	background:white; /* Tăng kích thước padding để nút to hơn */
+}
+
+/* Hover effect */
+.content-paging .filter-page a:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+}
+
+.content-paging .filter-page a.filter-page-number:hover{
+	opacity: 0.75;
+}
+
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  
+  .khuyenmai {
+	font-family: 'Oswald' !important;
+    font-weight: 400;
+	float: left;
+	color: white;
+	border-radius: 50%;
+	padding: 5px;
+	background: #ff0000;
+	animation: blink 2s infinite; /* 1s là thời gian của mỗi chu kỳ blink */
+  }
+  
